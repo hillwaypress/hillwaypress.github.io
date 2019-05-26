@@ -1,0 +1,60 @@
+@import url('http://fonts.googleapis.com/earlyaccess/notosanstc.css');
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+body {background-color:#DCDCDC; margin:0; padding:0; font-family:'Noto Sans TC', sans-serif; overflow-y:scroll; overflow-x:hidden;}
+div.menu {min-width:500px; min-height:40px}
+div.page {text-align:center; max-width:900px; padding:20px 0px; margin:15px 0px 50px 0px; border-style:solid; border-width:1px 0px 0px 0px; border-color:#989898; -webkit-animation:fadein 0.4s; animation:fadein 0.4s}
+div.holder {margin:20px 0px;}
+div.box {padding:10px 0px 0px 0px;}
+div.box1 {margin:0px 20px; padding:0px 40px; text-align:justify; font-weight:300;}
+div.box2 {background-color:#EBEBEB; width:360px; display:inline-block; border-style:solid; border-width:1px; border-color:#F0F0F0; vertical-align:top; margin:0px 10px; padding:10px 10px 10px 10px;}
+div.box3 {background-color:#EBEBEB; width:225px; display:inline-block; border-style:solid; border-width:1px; border-color:#F0F0F0; vertical-align:top; margin:0px 10px; padding:10px 10px 0px 10px;}
+div.tile {background-color:#EBEBEB; width:400px; display:inline-block; border-style:solid; border-width:1px; border-color:#F0F0F0; vertical-align:top; margin:0px 10px 20px 10px; padding:10px 10px 10px 10px; box-shadow:2px 2px 5px 0px #D0D0D0; text-align:center; font-size:0.9em;}
+p {color:#585858; font-size:1em;}
+p.bold{font-weight:600; text-align:center;}
+p.copyright{font-size:0.9em; color:#989898; text-align:center; cursor:default; webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+p.center{text-align:center; line-height: 0.5;}
+h1 {color:#444444; margin-top:0em; margin-bottom:20px; font-size:1.5em; text-align:center;}
+h2 {color:#58C6AB; font-size:1.2em;}
+img {border:0;}
+a {text-decoration:none; padding:0; outline:none; color:#58C6AB;	white-space:nowrap; text-align:justify; font-weight:400;}
+a:hover{text-decoration:underline;}	
+a.button,a.icon,a.sub  {display:block; color:#787878; cursor:default; transition:all 0.2s; white-space:nowrap; font-size:0.9em}
+a.button {line-height:20px; padding:10px 20px; margin:0; border-radius: 20px;}
+a.icon {margin:0; border-radius: 20px;}
+a.update  {text-align:center; color:#585858; font-weight:500; cursor:default; transition:all 0.2s; white-space:nowrap; font-size:0.9em; line-height:40px; padding:10px 20px; background-color:#CFCFCF; border-radius:10px;}
+a.sub {padding:5px; margin:0; font:10px; width:80px}
+a.button:hover,a.icon:hover,a.sub:hover {text-decoration:none; background-color:#FFF952; color:#585858; text-decoration:none;} 
+a.update:hover {text-decoration:none; color:#EAEAEA; background-color:#58C6AB;} 
+a:active,a:focus,a:visited {text-decoration:none;}
+ul.menu{clear:left; float:left; margin:0; position:relative; left:50%; text-align:center; list-style:none; padding:0;}
+li.menu{float:left; display:block; list-style:none; margin:0; padding:0; position:relative; right:50%;}
+li ul {display:none;}
+li:hover ul {clear:left; float:left; margin:0; display:block; position:absolute; background-color:#FFFFFF; list-style:none; padding:5px; text-align:center; left:-28px; border-style:solid; border-width:0px 2px 2px 2px; border-color:#F0F0F0;}
+li:hover li {float:left; list-style:none; display:block; margin:0; padding:0; position:relative; text-align:center;}
+ul.tile {list-style-type:none; margin:0; padding:0; text-align:center;}
+ul.tile li {display:inline-block; height:400px; margin:0 1em 1em 0; position:relative; width:400px;}
+span.desc {background:rgba(0,0,0,0.5); color:white; cursor:pointer; display:table; height:400px; left:0; position:absolute; top:0; width:400px; opacity:0; transition:all 0.2s ease-out;}
+span.desc span {display:table-cell; text-align:center; vertical-align:middle;}
+ul.tile li:hover span.desc {opacity:1; transition:all 0.3s ease;}
+
+@-moz-document url-prefix() { div.pad {min-height:20px;}}
+
+.m420 {display: none;}
+
+@media only screen and (max-device-width: 800px) {
+.m420 {display:block;}       
+.desktop {display:none;}
+p {font-size:1.5em;}
+p.copyright{font-size:1em;}
+a.button,a.icon,a.sub {font-size:1.5em}
+a.button {padding:10px; border-radius: none;}
+a.icon {border-radius: none;}
+div.box2 {font-size:1.0em}
+div.box3 {font-size:1.1em}
+div.tile {font-size:0.8em}
+h1 {font-size:1.5em}
+h2 {font-size:1.5em}
+
+} 
